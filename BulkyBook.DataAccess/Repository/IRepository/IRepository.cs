@@ -13,7 +13,7 @@ namespace BulkyBook.DataAccess.Repository.IRepository
         IEnumerable<T> GetAll(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            string includeProperties = null
+            string includeProperties = ""
             );
         T GetFirstOrDefault(
          Expression<Func<T, bool>> filter = null,
